@@ -1,3 +1,10 @@
+/* your existing CV.css rules… */
+
+/* ───────────────────────────────────────────────────────────────── */
+/* Override to center & flow naturally (put this at the end)       */
+/* ───────────────────────────────────────────────────────────────── */
+
+/* Container: constrain width and center it */
 .u-section-1 .u-sheet-1 {
   max-width: 900px !important;
   width: 90% !important;
@@ -6,7 +13,7 @@
   min-height: auto !important;
 }
 
-/* Headline (Name & contact) */
+/* Name header */
 .u-section-1 .u-text-1 {
   font-size: 2.25rem !important;
   line-height: 1.2 !important;
@@ -15,55 +22,50 @@
   text-align: center !important;
 }
 
-/* Sub‑heading (Education, Experience, etc.) */
-.u-section-1 .u-text-3,
-.u-section-1 .u-text-6 {
+/* Section titles (Education, Experience, etc.) */
+.u-section-1 .u-text-3 {
   font-size: 1.5rem !important;
   font-weight: 700 !important;
-  width: 100% !important;
   margin: 40px 0 10px !important;
 }
 
-/* Body text & lists */
+/* Body paragraphs & lists */
 .u-section-1 .u-text-2,
 .u-section-1 .u-text-4,
 .u-section-1 .u-text-5,
 .u-section-1 .u-text-7 {
   font-size: 1.125rem !important;
   line-height: 1.6 !important;
-  width: 100% !important;
   margin: 0 0 20px !important;
 }
 
-/* Download CV button */
+/* Download button */
 .u-section-1 .u-btn-1 {
   display: block !important;
-  width: auto !important;
   margin: 40px auto !important;
   padding: 12px 24px !important;
   text-align: center !important;
 }
 
-/* Ensure lists don’t get weird indents */
+/* Lists */
 .u-section-1 ul {
   padding-left: 1.25rem !important;
   margin: 0 0 20px !important;
 }
 
-/* Reset any leftover negative margins */
+/* Reset any weird negative margins */
 .u-section-1 .u-text-1,
 .u-section-1 .u-text-2,
 .u-section-1 .u-text-3,
 .u-section-1 .u-text-4,
 .u-section-1 .u-text-5,
-.u-section-1 .u-text-6,
 .u-section-1 .u-text-7,
 .u-section-1 .u-btn-1 {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
 
-/* Mobile tweaks: keep padding but stack nicely */
+/* Mobile tweak */
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
     padding: 20px 10px !important;
