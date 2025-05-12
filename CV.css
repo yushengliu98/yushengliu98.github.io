@@ -72,3 +72,25 @@
   }
 }
 
+/* ─── two‑column layout ───────────────────────────────────────────── */
+.cv-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ensure each pane uses full width of its grid cell */
+.cv-left,
+.cv-right {
+  width: 100%;
+}
+
+/* collapse to one column on narrower screens */
+@media (max-width: 767px) {
+  .cv-columns {
+    grid-template-columns: 1fr /*!important*/;
+  }
+}
+
+
