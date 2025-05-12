@@ -1,7 +1,9 @@
-/* your existing CV.css rules… */
+/*  
+  (… your existing CV.css rules …)
+*/
 
 /* ───────────────────────────────────────────────────────────────── */
-/* Override to center & flow naturally (put this at the end)       */
+/* Overrides: center & flow naturally + style Publications header */
 /* ───────────────────────────────────────────────────────────────── */
 
 /* Container: constrain width and center it */
@@ -22,11 +24,21 @@
   text-align: center !important;
 }
 
-/* Section titles (Education, Experience, etc.) */
+/* Generic section titles (Education, Experience, Skills…) */
 .u-section-1 .u-text-3 {
   font-size: 1.5rem !important;
   font-weight: 700 !important;
   margin: 40px 0 10px !important;
+  width: 100% !important;
+}
+
+/* Publications title */
+.u-section-1 .u-text-6 {
+  /* match .u-text-3 styling exactly */
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  margin: 40px 0 10px !important;
+  width: 100% !important;
 }
 
 /* Body paragraphs & lists */
@@ -36,6 +48,13 @@
 .u-section-1 .u-text-7 {
   font-size: 1.125rem !important;
   line-height: 1.6 !important;
+  margin: 0 0 20px !important;
+  width: 100% !important;
+}
+
+/* Lists */
+.u-section-1 ul {
+  padding-left: 1.25rem !important;
   margin: 0 0 20px !important;
 }
 
@@ -47,18 +66,13 @@
   text-align: center !important;
 }
 
-/* Lists */
-.u-section-1 ul {
-  padding-left: 1.25rem !important;
-  margin: 0 0 20px !important;
-}
-
-/* Reset any weird negative margins */
+/* Reset any leftover negative margins */
 .u-section-1 .u-text-1,
 .u-section-1 .u-text-2,
 .u-section-1 .u-text-3,
 .u-section-1 .u-text-4,
 .u-section-1 .u-text-5,
+.u-section-1 .u-text-6,
 .u-section-1 .u-text-7,
 .u-section-1 .u-btn-1 {
   margin-left: 0 !important;
