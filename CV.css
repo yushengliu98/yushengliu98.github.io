@@ -1,48 +1,53 @@
-.u-section-1 .u-sheet-1 {min-height: 928px}
-.u-section-1 .u-text-1 {font-size: 1.25rem; line-height: 1.4; width: 524px; margin: 41px auto 0}
-.u-section-1 .u-text-2 {line-height: 1.6; margin: 51px 534px 0 20px}
-.u-section-1 .u-text-3 {font-size: 1.5rem; font-weight: 700; margin: -448px 406px 0 548px}
-.u-section-1 .u-text-4 {font-size: 1.125rem; line-height: 1.6; margin: 12px 0 0 576px}
-.u-section-1 .u-text-5 {font-size: 1.125rem; line-height: 1.6; margin: 51px -5px 0 576px}
-.u-section-1 .u-text-6 {font-size: 1.5rem; font-weight: 700; margin: -150px auto 0 548px}
-.u-section-1 .u-text-7 {font-size: 1.125rem; line-height: 1.6; margin: 152px 317px 0 20px}
-.u-section-1 .u-btn-1 {border-style: none; font-weight: 700; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 1px; background-image: none; margin: -121px 97px 60px auto} 
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  max-width: 800px;
+  line-height: 1.6;
+}
 
-@media (max-width: 1199px){ .u-section-1 .u-sheet-1 {min-height: 1079px}
-.u-section-1 .u-text-1 {width: 544px}
-.u-section-1 .u-text-2 {width: auto; margin-right: 429px}
-.u-section-1 .u-text-3 {width: auto; margin-right: 211px; margin-left: 543px}
-.u-section-1 .u-text-4 {width: auto; margin-right: 8px; margin-left: 579px}
-.u-section-1 .u-text-5 {width: auto; margin-right: 0; margin-left: 571px}
-.u-section-1 .u-text-6 {width: auto; margin-top: -214px; margin-left: 543px}
-.u-section-1 .u-text-7 {width: auto; margin-top: 76px; margin-right: 350px}
-.u-section-1 .u-btn-1 {margin-top: -190px; margin-right: 121px} }
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
 
-@media (max-width: 991px){ .u-section-1 .u-sheet-1 {min-height: 1250px}
-.u-section-1 .u-text-2 {margin-right: 347px}
-.u-section-1 .u-text-3 {margin-top: -532px; margin-right: 99px; margin-left: 435px}
-.u-section-1 .u-text-4 {margin-top: 0; margin-right: 0; margin-left: 450px}
-.u-section-1 .u-text-5 {margin-top: 38px; margin-left: 450px}
-.u-section-1 .u-text-6 {margin-top: -262px; margin-right: 151px; margin-left: auto}
-.u-section-1 .u-text-7 {margin-top: 68px; margin-right: 307px}
-.u-section-1 .u-btn-1 {margin-top: -182px; margin-right: 51px} }
+h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
 
-@media (max-width: 767px){ .u-section-1 .u-sheet-1 {min-height: 1474px}
-.u-section-1 .u-text-1 {width: 540px; margin-left: 0; margin-right: 0}
-.u-section-1 .u-text-2 {margin-top: 11px; margin-left: 0; margin-right: 0}
-.u-section-1 .u-text-3 {margin-top: 404px; margin-left: 0; margin-right: 0}
-.u-section-1 .u-text-4 {margin-left: 0}
-.u-section-1 .u-text-5 {margin-top: 55px; margin-left: 0}
-.u-section-1 .u-text-6 {margin-top: -150px; margin-right: auto; margin-left: 0}
-.u-section-1 .u-text-7 {margin-top: -691px; margin-left: 0; margin-right: 0}
-.u-section-1 .u-btn-1 {margin-top: 393px; margin-right: auto; margin-bottom: 11px} }
+ul {
+  padding-left: 20px;
+}
 
-@media (max-width: 575px){ .u-section-1 .u-sheet-1 {min-height: 1791px}
-.u-section-1 .u-text-1 {width: 340px; margin-right: -1px; margin-left: -1px}
-.u-section-1 .u-text-2 {margin-top: 18px; margin-right: -1px; margin-left: -1px}
-.u-section-1 .u-text-3 {margin-top: 439px; margin-right: -3px; margin-left: 1px}
-.u-section-1 .u-text-4 {margin-top: 11px; margin-right: 18px; margin-left: -1px}
-.u-section-1 .u-text-5 {margin-top: 38px; margin-left: 1px; margin-right: 1px}
-.u-section-1 .u-text-6 {margin-top: -206px; margin-left: -1px}
-.u-section-1 .u-text-7 {font-size: 1rem; margin-top: -856px; margin-right: 3px; margin-left: -1px}
-.u-section-1 .u-btn-1 {margin-top: 585px} }
+.section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  color: #f15048;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #f15048;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
